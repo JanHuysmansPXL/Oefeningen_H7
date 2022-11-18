@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato , sans-serif;
+}
+
+body {
+    width: 100%;
+    background-image: url("assets/achtergrond.png");
+}
+
+header {
+    width: 80%;
+    background-color: #2F4F4F;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+header h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 20px;
+}
+
+main {
+    width: 80%;
+    background-color: #FFF;
+    margin: 120px auto;
+    padding: 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+}
+
+main h1, h2 {
+    margin-top: 10px;
+}
+
+main section h3 {
+    font-weight: 600;
+}
+
+main section p {
+    margin-top: 10px;
+}
+
+main section:nth-of-type(2) {
+    height: 800px;
+}
+
+section article {
+    background-color: #CCCCCC;
+    color: #3C3C3C;
+    font-weight: 500;
+    margin-top: 20px;
+    height: calc(100% / 3 - 4%);
+    overflow: scroll;
+}
+
+footer {
+    position: relative;
+}
+
+footer p {
+    padding: 15px 20px;
+    border-radius: 10px 10px 0 0;
+    background-color: #2F4F4F;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    z-index: 2;
+}
+
+footer p a {
+    color: #CCCCCC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ARTICLES BEKIJKEN MET CALC FUNCTIE*/
+
+@media screen and (max-width: 960px) {
+
+    body {
+        background-image: none;
+    }
+
+    header {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    main {
+        width: 100%;
+        border-radius: 0;
+        margin-top: 60px;
+    }
+
+    footer p {
+        padding: 30px 30px;
+        border-radius: 0;
+        bottom: 25px;
+        right: 20px;
+
+    }
+}

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #CCCCCC;
+}
+
+header {
+    background-color: #FFF;
+    padding: 25px;
+    border-bottom: 3px solid #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+main {
+    width: 600px;
+    margin: 90px auto 0 auto;
+    overflow: auto;
+}
+
+main article {
+    background-color: #FFF;
+    border-bottom: 3px solid #000;
+    border-radius: 5px;
+    padding: 25px;
+    margin: 20px 0;
+    position: relative;
+}
+
+article h1 {
+    font-size: 1.25rem;
+    margin: .5rem auto;
+}
+
+main article .type-pill {
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px;
+    margin: 10px 2px;
+    border-radius: 5px;
+}
+
+.type-pill.grass {
+    background-color: #0EB225;
+}
+
+.type-pill.poison {
+    background-color: #580EB2;
+}
+
+.type-pill.fire {
+    background-color: #FF4500;
+}
+
+.type-pill.flying {
+    background-color: #8A42E1;
+}
+
+main article img {
+    width: 50px;
+    position: absolute;
+    top: 40px;
+    right: 80px;
+}
+
+.pokemon-number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+@media screen and (max-width: 650px) {
+
+    main {
+        width: 100%;
+    }
+
+    header {
+        position: absolute;
+    }
+
+    main article {
+        border-radius: 0;
+        border-bottom: 1px solid #CCC;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    main {
+        min-width: 300px;
+    }
+
+    main article .type-pill {
+        visibility: hidden;
+    }
+}
