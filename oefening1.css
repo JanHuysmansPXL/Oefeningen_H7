@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+}
+
+body {
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    padding: .4rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    padding: .2rem;
+}
+
+p code {
+    font-family: monospace;
+    color: #FF0000;
+}
+
+ol {
+    padding: .4rem 1rem;
+    list-style-type: upper-latin;
+}
+
+ol li {
+    margin-top: .6rem;
+}
+
+ol ul {
+    list-style-type: disc;
+}
+
+ul li p {
+    margin-top: .2rem;
+}
