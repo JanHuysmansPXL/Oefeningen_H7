@@ -6,6 +6,10 @@
 }
 
 body {
+width: 100%;
+}
+
+main, header {
     max-width: 800px;
     min-width: 480px;
     margin: 0 auto;
