@@ -6,22 +6,24 @@
 }
 
 article {
-    padding: .5rem;
+    padding: 1.25rem;
     width: 100%;
     height: auto;
 }
 
 article h1 {
-    font-family: 'Rubik Dirt', fantasy;
-    padding: 0 .5rem;
+    font-family: 'Rubik Dirt', cursive;
 }
 
 article p {
-    padding: .5rem;
     font-family: Figtree, sans-serif;
+    margin-top: .25rem;
 }
 
+/* Mobile first - Geen Media Query voor de kleinste waardes !!! */
+
 #article1 {
+    display: none;
     background-color: #00811A;
 }
 
@@ -41,20 +43,16 @@ article p {
     background-color: #00811A;
 }
 
+@media screen and (min-width: 50rem) {
+    #article1 {
+        display: block;
+    }
+}
+
 @media screen and (min-width: 75rem) {
-    article:last-of-type {
+    #article5 {
         display: none;
     }
 }
 
-@media screen and (max-width: 75rem) and (min-width: 50rem) {
-    article {
 
-    }
-}
-
-@media screen and (max-width: 50rem) {
-    article:first-of-type {
-        display: none;
-    }
-}
